@@ -1,0 +1,14 @@
+name: ej1
+
+on: push
+
+jobs:
+  ej1:
+    runs-on: ubuntu_latest
+    steps:
+      - name: Bajar codigo
+        uses: actions/checkout@v4
+      - name: Instalar pytest
+        run: pip install pytest
+      - name: Test
+        run: pytest test.py
