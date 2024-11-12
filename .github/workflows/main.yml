@@ -1,6 +1,6 @@
 name: ej1
 
-
+on: push
 jobs:
   ej1:
     runs-on: ubuntu_latest
